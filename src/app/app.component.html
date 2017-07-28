@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="header">
+<h1><a routerLink="login">登陆</a>{{now | date:"yyyy-MM-dd"}} Welcome to {{title}}!</h1>
+</div>
+
+<div class="row">
+<div class="col-2 col-m-2 menu">
+<ul>
+<li><a routerLink="home">Home</a></li>
+<li><a routerLink="about">About</a></li>
+<li><a routerLink="student">学员管理</a></li>
+<li><a routerLink="stock">股票查询</a></li>
+<li>项目管理</li>
+<li>财务管理</li>
+<li>客户管理</li>
+</ul>
+</div>
+<div class="col-10 col-m-10 main-container">
+<router-outlet></router-outlet>
+</div>
+
+</div>
+<div class="footer">
+<p>Copyright Ryane(Liu Yuyang) 2017</p>
+</div>
+
